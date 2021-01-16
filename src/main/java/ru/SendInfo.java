@@ -12,9 +12,9 @@ import java.util.Date;
 
 public class SendInfo extends Thread {
 
-    private DbxClientV2 client;
-    private BufferedImage bufferedImage;
-    private SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd hh mm ss a");
+    private final DbxClientV2 client;
+    private final BufferedImage bufferedImage;
+    private final SimpleDateFormat formatter = new SimpleDateFormat("yyyyMMdd hh mm ss a");
 
     public SendInfo(DbxClientV2 client, BufferedImage bufferedImage) {
         this.client = client;
